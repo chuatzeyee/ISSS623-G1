@@ -1,0 +1,14 @@
+# never commit the extracted 922MB ASCII file
+*.ASC
+*.asc
+LLCP2024_sample.csv
+
+# notebooks / python
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db
