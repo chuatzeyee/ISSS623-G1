@@ -15,7 +15,3 @@ SMU ISSS623 Applied Data Science in Healthcare (Jul-Aug 2026). Predictive modell
 - `LLCP2024ASC.zip` extracts to `LLCP2024.ASC` (922 MB fixed-width ASCII) - **do not commit the extracted file**; it exceeds GitHub's 100 MB limit. Extract locally and parse with `data/BRFSS_Extraction.ipynb` + `brfss2024_variable_dictionary.csv`.
 - Topic extracts: A = 29 cols, B = 33, C = 37; all rows, unweighted, still contain 7/77 (don't know), 9/99 (refused), 88 (none) codes - see `docs/CHEATSHEET_2_DATA.md` for recode rules.
 - Key deadlines (corrected): proposal 25 Jul · Quiz 1 1 Aug · Quiz 2 + presentation 15 Aug · final + peer eval 21 Aug.
-
-## Study site
-
-https://chuatzeyee.github.io/ISSS623/ - topics, glossary, debate trainer, project playbook, practice quiz.
