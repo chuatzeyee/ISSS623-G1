@@ -64,20 +64,7 @@ Column positions for the caregiver fields were taken from the parsed codebook (C
 
 **Figure 1. Data-flow diagram (2024 BRFSS → analytic samples)**
 
-```
-457,670   Full 2024 BRFSS file (all states and territories)
-   │  exclude 361,383 never asked CAREGIV1 (state did not field the module)
-   ▼
- 96,287   Caregiver-module sample (16 states; 21.0% of file)
-   │  exclude 1,617 with invalid CAREGIV1 (n = 558) and/or invalid CHECKUP1 (overlapping)
-   ▼
- 94,670   Valid caregiver status + valid primary outcome
-   │  exclude 7,994 with an invalid value on any complete-case predictor (§5)
-   ▼
- 86,676   MAIN ANALYTIC SAMPLE (90.0% within-module retention)
-   │
-   └────►  19,263   Caregivers-only subset (22.2%) for RQ3
-```
+![Figure 1. CONSORT-style cohort cascade from the full 2024 BRFSS file to the main analytic sample (n = 86,676) and the caregivers-only subset (n = 19,263). Exclusion reasons and counts shown at right; format follows Lim et al. (2024).](results/data_flow_diagram.png)
 
 All recodes are codebook-driven fixed mappings (CDC, 2025), so applying them before the stratified train/test split introduces no leakage; the full leakage-prevention design (intensity-item quarantine, no target-derived features, split-before-fit, single test-set evaluation) is described with the modelling methods (§8).
 
